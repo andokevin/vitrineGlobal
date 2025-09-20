@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+@theme {
+  --color-luxe-gold: #D4AF37;
+  --color-luxe-black: #1A1A1A;
+  --color-luxe-white: #F5F5F5;
+  --color-emerald: #14532D;   /* couleur principale verte foncée du header */
+  --color-sapphire-dark: #E0F2F1; /* bleu très foncé */
+  --color-sapphire: #B2DFDB;  /* bleu sapphire du dégradé */
+  --color-ruby: #81C784;
+
+  --font-serif: 'Playfair Display', serif;
+  --font-sans: 'Inter', sans-serif;
+}
+@layer base {
+  body {
+    @apply bg-white text-gray-800;
+    font-family: var(--font-sans);
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+  }
+
+  a {
+    @apply text-blue-600 hover:text-blue-800 transition-colors duration-300;
+  }
+
+  button {
+    @apply bg-emerald-600 text-white px-4 py-2 rounded hover:bg-emerald-700 transition-colors duration-300;
+  }
+}
+
