@@ -126,7 +126,7 @@ const About = () => {
       </section>
 
       {/* Pourquoi nous choisir */}
-      <section className="py-16 bg-gradient-to-r from-[#1B5E20] to-[#D4AF37] text-white">
+      <section className="py-16 bg-gradient-to-r from-[#1B5E20] to-[#2d3748] text-white">
         <div className="container mx-auto px-6">
           <div className="text-center mb-12">
             <h2 className="text-4xl font-bold mb-4">Pourquoi choisir Global Network Solution ?</h2>
@@ -149,7 +149,7 @@ const About = () => {
             ))}
           </div>
         </div>
-      </section>
+      </section>  
     </div>
   );
 };

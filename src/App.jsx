@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
+import ScrollToTop from "./components/ScrollToTop";
 import Home from "./pages/Home";
 import Footer from "./components/Footer";
 import Contact from "./pages/Contact";
@@ -29,11 +30,11 @@ function App() {
         <div className="absolute bottom-20 left-20 w-4 h-4 bg-pink-500 rounded-full animate-bounce blur-md"></div>
 
         <h1
-          className={`text-3xl sm:text-5xl md:text-6xl font-bold transition-transform duration-700 transform ${
+          className={` text-bg-image text-2xl sm:text-4xl md:text-5xl font-bold transition-transform duration-700 transform ${
             scale ? "scale-125" : "scale-75"
           } px-2 sm:px-4 py-1 sm:py-2 rounded-2xl mb-8`}
         >
-          Global Network
+          Connecter Madagascar au reste du monde 
         </h1>
 
         <div className="w-8 h-8 sm:w-12 sm:h-12 border-4 border-t-emerald-600 border-b-emerald-600 border-l-transparent border-r-transparent rounded-full animate-spin"></div>
@@ -44,6 +45,7 @@ function App() {
   return (
     <div className="relative min-h-screen overflow-hidden bg-gradient-to-br from-gray-900 via-gray-800 to-gray-700">
       <Header />
+      <ScrollToTop />
       <Routes>
         {/* Ici, tu affiches juste le carousel sur la page d'accueil */}
         <Route path="/" element={<Home />} />

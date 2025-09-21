@@ -35,10 +35,10 @@ const Carousel = () => {
     <div className="relative w-full py-2"> 
      
       <div className="text-center mb-4"> 
-        <h2 className="text-3xl md:text-4xl font-bold text-gray-800">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-200">
           Notre produit
         </h2>
-        <p className="text-gray-600 mt-1"> 
+        <p className="text-gray-200 mt-1"> 
           Découvrez nos produits phares disponibles à Madagascar
         </p>
       </div>

@@ -122,15 +122,6 @@ const AnimatedSectionsCarousel = () => {
           </button>
         ))}
       </div>
-
-      {/* Compteur */}
-      <div className="absolute top-4 right-4 z-20">
-        <div className="bg-black/50 backdrop-blur-sm rounded-full px-4 py-2">
-          <span className="text-white text-sm font-medium">
-            {activeCard + 1} / {allSectionsData.length}
-          </span>
-        </div>
-      </div>
     </div>
   );
 };
